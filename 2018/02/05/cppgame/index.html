@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://zyy1214.github.io">
   <title>一个C++小游戏 | 张远洋的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="++干很多事情，在学习之余，也可以编一些小游戏来娱乐身心。编这些小游戏能很大程度上的提高我们的代码能力。很多同学也想尝试编一些小游戏，但苦于代码问题，只能编出一些棋牌类游戏。这里，我给大家提供一个自己编的跑酷游戏，代码较短也比较简单，大家也可以自己进一步改进。我会详细介绍每一段代码。">
+  <meta name="description" content="我们可以用C++干很多事情，在学习之余，也可以编一些小游戏来娱乐身心。编这些小游戏能很大程度上的提高我们的代码能力。很多同学也想尝试编一些小游戏，但苦于代码问题，只能编出一些棋牌类游戏。这里，我给大家提供一个自己编的跑酷游戏，代码较短也比较简单，大家也可以自己进一步改进。我会详细介绍每一段代码。">
 <meta name="keywords" content="计算机科学,小游戏">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一个C++小游戏">
 <meta property="og:url" content="http://zyy1214.github.io/2018/02/05/cppgame/index.html">
 <meta property="og:site_name" content="张远洋的博客">
-<meta property="og:description" content="++干很多事情，在学习之余，也可以编一些小游戏来娱乐身心。编这些小游戏能很大程度上的提高我们的代码能力。很多同学也想尝试编一些小游戏，但苦于代码问题，只能编出一些棋牌类游戏。这里，我给大家提供一个自己编的跑酷游戏，代码较短也比较简单，大家也可以自己进一步改进。我会详细介绍每一段代码。">
+<meta property="og:description" content="我们可以用C++干很多事情，在学习之余，也可以编一些小游戏来娱乐身心。编这些小游戏能很大程度上的提高我们的代码能力。很多同学也想尝试编一些小游戏，但苦于代码问题，只能编出一些棋牌类游戏。这里，我给大家提供一个自己编的跑酷游戏，代码较短也比较简单，大家也可以自己进一步改进。我会详细介绍每一段代码。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://cdn.luogu.org/upload/pic/14013.png">
-<meta property="og:updated_time" content="2019-04-23T10:26:06.976Z">
+<meta property="og:updated_time" content="2019-05-19T05:48:26.116Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一个C++小游戏">
-<meta name="twitter:description" content="++干很多事情，在学习之余，也可以编一些小游戏来娱乐身心。编这些小游戏能很大程度上的提高我们的代码能力。很多同学也想尝试编一些小游戏，但苦于代码问题，只能编出一些棋牌类游戏。这里，我给大家提供一个自己编的跑酷游戏，代码较短也比较简单，大家也可以自己进一步改进。我会详细介绍每一段代码。">
+<meta name="twitter:description" content="我们可以用C++干很多事情，在学习之余，也可以编一些小游戏来娱乐身心。编这些小游戏能很大程度上的提高我们的代码能力。很多同学也想尝试编一些小游戏，但苦于代码问题，只能编出一些棋牌类游戏。这里，我给大家提供一个自己编的跑酷游戏，代码较短也比较简单，大家也可以自己进一步改进。我会详细介绍每一段代码。">
 <meta name="twitter:image" content="https://cdn.luogu.org/upload/pic/14013.png">
   
     <link rel="alternative" href="/atom.xml" title="张远洋的博客" type="application/atom+xml">
@@ -163,7 +163,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>++干很多事情，在学习之余，也可以编一些小游戏来娱乐身心。编这些小游戏能很大程度上的提高我们的代码能力。很多同学也想尝试编一些小游戏，但苦于代码问题，只能编出一些棋牌类游戏。这里，我给大家提供一个自己编的跑酷游戏，代码较短也比较简单，大家也可以自己进一步改进。我会详细介绍每一段代码。<br><a id="more"></a><br><img src="https://cdn.luogu.org/upload/pic/14013.png" alt></p>
+        <p>我们可以用C++干很多事情，在学习之余，也可以编一些小游戏来娱乐身心。编这些小游戏能很大程度上的提高我们的代码能力。很多同学也想尝试编一些小游戏，但苦于代码问题，只能编出一些棋牌类游戏。这里，我给大家提供一个自己编的跑酷游戏，代码较短也比较简单，大家也可以自己进一步改进。我会详细介绍每一段代码。<br><a id="more"></a><br><img src="https://cdn.luogu.org/upload/pic/14013.png" alt></p>
 <p>首先，我来说一下代码的结构问题。要想使成百上千行的代码变得规整，就一定不能把所有代码全部写在主函数里。事实上，主函数只是一个结构，要让人看到主函数中的代码后，能清晰的看出那段代码在干什么。所以，看我的代码时，也可以从主函数开始，先了解一下整体结构。</p>
 <p>另外，变量名和函数名也是一个问题。编游戏时一定要把名字取得跟它的实际用途相符，不怕长。注意：如果名字由多个单词组成，除第一个单词外，其它单词的首字母都要大写。</p>
 <p>不过大家编游戏还要知道C++中一些特殊的函数<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">kbhit()       <span class="comment">//判断此时键盘是否被按下</span></span><br><span class="line">getch()       <span class="comment">//接受一个字符而不再屏幕上显示，在未就收到字符时一直等待</span></span><br><span class="line">Sleep(n)      <span class="comment">//让程序“休息”n毫秒</span></span><br><span class="line">rand()%n+k    <span class="comment">//取k~k+n之间的随机数</span></span><br><span class="line">srand(n)      <span class="comment">//重设随机数种子为n</span></span><br><span class="line">time(<span class="number">0</span>)       <span class="comment">//1970年1月1日到现在经过的秒数</span></span><br></pre></td></tr></table></figure></p>
@@ -330,31 +330,6 @@
 
 
 
-<section id="comments" class="comments">
-  <style>
-    .comments{margin:30px;padding:10px;background:#fff}
-    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-  </style>
-  <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "qJXlzoBWH5ngDrEehbbDhbIm-gzGzoHsz",
-            app_key: "tyg0puDigGmGYvOAoGixvJtk",
-            placeholder: "期待您的真知灼见~",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
 
           </div>
         </div>
@@ -460,6 +435,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">系统消息</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">博弈论</a>
               </li>
              
               <li class="article-tag-list-item">
