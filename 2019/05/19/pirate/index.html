@@ -18,7 +18,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://zyy1214.github.io/assets/img/pirate1.png">
 <meta property="og:image" content="http://zyy1214.github.io/assets/img/pirate2.png">
-<meta property="og:updated_time" content="2019-05-19T14:16:31.858Z">
+<meta property="og:updated_time" content="2019-05-26T07:25:58.318Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="海盗分金币——谁能活下来？">
 <meta name="twitter:description" content="想必大家都听说过著名的博弈论问题——海盗分金币吧。然而，我今天介绍的将是另一种海盗分金币。和传统的问题不同的是，现在将有$1000$个海盗来分$100$个金币。">
@@ -71,6 +71,10 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -182,10 +186,10 @@
 <h2 id="海盗分金币问题的推广"><a href="#海盗分金币问题的推广" class="headerlink" title="海盗分金币问题的推广"></a>海盗分金币问题的推广</h2><p>现在，又来了一大堆海盗，有$1000$个，他们都来分这$100$个金币。现在，按照原来的方法显然是不行的。因为第$1000$号海盗需要拉拢$499$个海盗，然而他只有$100$个金币，肯定是不够分的。那么，他最多只能使$100$个人投他的票！那么他看似必死无疑了，而照这样下去大于$202$号的海盗似乎都必死无疑了！</p>
 <p>我们就在从较小的情况看吧，比如现在只有$202$个人。这是，第$202$号海盗需要把钱分给所有除自己外的偶数号，这样才能保证任务通过。</p>
 <p>我们再来看$203$个海盗的情况。由于海盗的第三条原则，在这个人提的方案中没有分到钱的人肯定不会投赞成票。这样，去除他自己和另外$100$个能得到钱的人，至少有$102$个人会投反对票。这样，第$203$个人就的确必死无疑了。</p>
-<p>分不到钱的海盗是不是一定会投反对票呢？这看起来很显然，因为如果这个方案被否决了，他们就有机会得到金币。即使他们得不到金币，由第三条原则，这些海盗也会投反对票。等等！我们还没有考虑最重要的第一条原则：海盗要保证自己能活下来！现在如果有$204$个人，$203$号海盗肯定会毫不犹豫地投出赞成票，因为如果$204$号海盗的方案被否决了，那么就轮到他提方案了。然而，这样他就必死无疑了。所以，第$204$号海盗只需要把钱分给所有除小于$200$号的所有奇数号海盗。因为如果这些海盗否决了这个方案，由于$203$号海盗提的方案肯定会被否决，那么在第$202$号海盗提出方案时，他们就得不到钱了。这样，$100$个人加上$203$号海盗加上$204$号海盗本人，就凑够了$102$个人，该任务获得通过。$204$号海盗也就获了下来，虽然他分文未得。</p>
+<p>分不到钱的海盗是不是一定会投反对票呢？这看起来很显然，因为如果这个方案被否决了，他们就有机会得到金币。即使他们得不到金币，由第三条原则，这些海盗也会投反对票。等等！我们还没有考虑最重要的第一条原则：海盗要保证自己能活下来！现在如果有$204$个人，$203$号海盗肯定会毫不犹豫地投出赞成票，因为如果$204$号海盗的方案被否决了，那么就轮到他提方案了。然而，这样他就必死无疑了。所以，第$204$号海盗只需要把钱分给小于$200$号的所有奇数号海盗。因为如果这些海盗否决了这个方案，由于$203$号海盗提的方案肯定会被否决，那么在第$202$号海盗提出方案时，他们就得不到钱了。这样，$100$个人加上$203$号海盗加上$204$号海盗本人，就凑够了$102$个人，该任务获得通过。$204$号海盗也就活了下来，虽然他分文未得。</p>
 <p><img src="/assets/img/pirate2.png" alt="204个海盗分金币"></p>
-<p>然而，第$205$号海盗就未必能活下来。$204$号和$203$号海盗知道自己能活下来而且分不到金币，为了投死更多的人，他们会投反对票。所以，第$205$号海盗最多只能获得$101$票。同样的，如果有$206$个人，第$206$号海盗也活不下来。虽然$205$号海盗会给他投票，但他最多能获得$102$票。然而如果有了$208$个人，情况就有不一样了。第$205~207$号海盗为了活下去，都会给$208$号投票，这样他就能获得$104$票，活了下来。</p>
-<p>如果超过了$208$个人，$203~208$这$6$个人都会一直投反对票。所以，$209~215$号海盗都必死无疑。然而，他们都会给第$216$号海盗投赞成票。这样$216$号海盗就会有$100+7+1=108$票，就能活下来了。</p>
+<p>然而，第$205$号海盗就未必能活下来。$204$号和$203$号海盗知道自己能活下来而且分不到金币，为了投死更多的人，他们会投反对票。所以，第$205$号海盗最多只能获得$101$票。同样的，如果有$206$个人，第$206$号海盗也活不下来。虽然$205$号海盗会给他投赞成票，但他最多能获得$102$票。然而如果有了$208$个人，情况就有不一样了。第$205$~$207$号海盗为了活下去，都会给$208$号投票，这样他就能获得$104$票，活了下来。</p>
+<p>如果超过了$208$个人，$203$~$208$这$6$个人都会一直投反对票。所以，$209~215$号海盗都必死无疑。然而，他们都会给第$216$号海盗投赞成票。这样$216$号海盗就会有$100+7+1=108$票，就能活下来了。</p>
 <p>于是我们找到了规律，在海盗人数$n&gt;200$时，若存在$k\in\mathbb{N}, s.t. n=200+2^k$，第一个说方案的人方能活下来，否则就只能被扔进海里喂鱼。所以，第$1000$个人活不下来的，直到第$712$号海盗才能活下来。</p>
 
       
@@ -296,6 +300,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2019/05/27/appinventor/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          App Inventor
+        
+      </div>
+    </a>
+  
   
     <a href="/2019/03/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Hello World</div>
@@ -331,6 +344,22 @@
 
   
 
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://zyy1214.github.io/2019/05/19/pirate/",
+  owner: 'zyy1214',
+  repo: 'zyy1214.github.io',
+  oauth: {
+    client_id: 'cd81b276fe8de8e2ae38',
+    client_secret: 'f34a526394d03fc4cccf96d1dbc086dac8779757',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
 
 
@@ -408,17 +437,25 @@ MathJax.Hub.Queue(function() {
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -439,11 +476,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">系统消息</a>
+                <a href="javascript:void(0)" class="js-tag color4">博弈论</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">博弈论</a>
+                <a href="javascript:void(0)" class="js-tag color5">系统消息</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -451,15 +488,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">密码学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">人工智能</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">密码学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">小游戏</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">App Inventor</a>
               </li>
             
             <div class="clearfix"></div>
@@ -505,6 +546,18 @@ MathJax.Hub.Queue(function() {
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="mailto:3031984017@qq.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>欢迎互加友链</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     
