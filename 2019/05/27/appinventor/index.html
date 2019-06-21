@@ -25,7 +25,7 @@
 <meta property="og:image" content="http://zyy1214.github.io/assets/img/appinventor6.png">
 <meta property="og:image" content="http://zyy1214.github.io/assets/img/appinventor7.png">
 <meta property="og:image" content="http://zyy1214.github.io/assets/img/appinventor8.png">
-<meta property="og:updated_time" content="2019-06-21T06:08:16.761Z">
+<meta property="og:updated_time" content="2019-06-21T07:26:52.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="App Inventor">
 <meta name="twitter:description" content="App Inventor原是Google开放的，现已由MIT接管。在其上，可以用模块化编程的模式创造在安卓系统上的App. App Inventor支持很多功能，可以方便、快捷的编出有用的APP，且极易上手。本文将对其进行简单的介绍。">
@@ -217,7 +217,7 @@
 <p>接着，我们一个个的设置每个组件的具体参数，使其尽可能的美观。还要对每一个组件用其功能命名，以方便接下来的编程。</p>
 <p><img src="/assets/img/appinventor8.png" alt="组件设计"></p>
 <h3 id="逻辑设计"><a href="#逻辑设计" class="headerlink" title="逻辑设计"></a>逻辑设计</h3><p>进行完组件设计后就要进行逻辑设计了，也就是开始进行模块化编程。</p>
-<p>未完待续……</p>
+<p>未完待续…</p>
 
       
 
@@ -380,43 +380,24 @@
   
 
   
-
-
-
-  <section id="comments" class="comments">
-    <style>
-      .comments{margin:30px;padding:10px;background:#fff}
-      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-    </style>
-    <div id="vcomment" class="comment"></div>
-<script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
+  <div id="gitment-ctn"></div> 
+<script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
 <script>
-   var notify = 'false' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-   new Valine({
-            av: AV,
-            el: '#vcomment',
-            notify: notify,
-            verify: verify,
-            app_id: "qJXlzoBWH5ngDrEehbbDhbIm-gzGzoHsz",
-            app_key: "tyg0puDigGmGYvOAoGixvJtk",
-            placeholder: "期待您的真知灼见~",
-            avatar: "wavatar",
-            avatar_cdn: "",
-            pageSize: 10
-    });
-    if(window.location.hash){
-          var checkExist = setInterval(function() {
-            if (document.getElementById(window.location.hash.replace("#",""))) {
-              location.href = window.location.hash;
-              clearInterval(checkExist);
-            }
-          }, 250);
-        }
+var gitment = new Gitment({
+  id: "http://zyy1214.github.io/2019/05/27/appinventor/",
+  owner: 'true',
+  repo: 'zyy1214.github.io',
+  oauth: {
+    client_id: 'cd81b276fe8de8e2ae38',
+    client_secret: 'f34a526394d03fc4cccf96d1dbc086dac8779757',
+  },
+})
+gitment.render('gitment-ctn')
 </script>
-  </section>
+  
+
+
 
 
           </div>
@@ -550,11 +531,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">小游戏</a>
+                <a href="javascript:void(0)" class="js-tag color3">App Inventor</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">App Inventor</a>
+                <a href="javascript:void(0)" class="js-tag color4">小游戏</a>
               </li>
             
             <div class="clearfix"></div>
