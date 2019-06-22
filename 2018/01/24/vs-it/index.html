@@ -168,6 +168,12 @@
   	<time datetime="2018-01-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
 </a>
         
+        
+          <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+          <span class="archive-article-date">
+            阅读量 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -347,24 +353,43 @@
   
 
   
-  <div id="gitment-ctn"></div> 
-<script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
+
+
+
+  <section id="comments" class="comments">
+    <style>
+      .comments{margin:30px;padding:10px;background:#fff}
+      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+    </style>
+    <div id="vcomment" class="comment"></div>
+<script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
 <script>
-var gitment = new Gitment({
-  id: "http://zyy1214.github.io/2018/01/24/vs-it/",
-  owner: 'zyy1214',
-  repo: 'zyy1214.github.io',
-  oauth: {
-    client_id: 'cd81b276fe8de8e2ae38',
-    client_secret: 'f34a526394d03fc4cccf96d1dbc086dac8779757',
-  },
-})
-gitment.render('gitment-ctn')
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "qJXlzoBWH5ngDrEehbbDhbIm-gzGzoHsz",
+            app_key: "tyg0puDigGmGYvOAoGixvJtk",
+            placeholder: "期待您的真知灼见~",
+            avatar: "wavatar",
+            avatar_cdn: "",
+            pageSize: 10
+    });
+    if(window.location.hash){
+          var checkExist = setInterval(function() {
+            if (document.getElementById(window.location.hash.replace("#",""))) {
+              location.href = window.location.hash;
+              clearInterval(checkExist);
+            }
+          }, 250);
+        }
 </script>
-  
-
-
+  </section>
 
 
           </div>
@@ -379,6 +404,10 @@ gitment.render('gitment-ctn')
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_uv"> 
+          本站访客数<span id="busuanzi_value_site_uv"></span>人次
+        </span>
     </div>
   </div>
 </footer>
@@ -498,11 +527,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">小游戏</a>
+                <a href="javascript:void(0)" class="js-tag color3">App Inventor</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">App Inventor</a>
+                <a href="javascript:void(0)" class="js-tag color4">小游戏</a>
               </li>
             
             <div class="clearfix"></div>
