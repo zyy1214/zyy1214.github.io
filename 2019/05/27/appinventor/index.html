@@ -25,7 +25,10 @@
 <meta property="og:image" content="http://zyy1214.github.io/assets/img/appinventor6.png">
 <meta property="og:image" content="http://zyy1214.github.io/assets/img/appinventor7.png">
 <meta property="og:image" content="http://zyy1214.github.io/assets/img/appinventor8.png">
-<meta property="og:updated_time" content="2019-06-22T09:20:41.863Z">
+<meta property="og:image" content="http://zyy1214.github.io/assets/img/appinventor9.png">
+<meta property="og:image" content="http://zyy1214.github.io/assets/img/appinventor10.png">
+<meta property="og:image" content="http://zyy1214.github.io/assets/img/appinventor11.png">
+<meta property="og:updated_time" content="2019-06-23T12:49:57.122Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="App Inventor">
 <meta name="twitter:description" content="App Inventor原是Google开发的，现已由MIT接管。在其上，可以用模块化编程的模式创造在安卓系统上的App. App Inventor支持很多功能，可以方便、快捷的编出有用的APP，且极易上手。本文将对其进行简单的介绍。">
@@ -183,7 +186,7 @@
 <p><img src="/assets/img/appinventor1.png" alt="网站首页截图"></p>
 <p>注册后点击屏幕左上角的“新建项目”按钮，即可新建一个项目。注意：项目名称必须使用英文，且命名后无法更改。（虽然项目名称对最后的App没有任何影响）</p>
 <p><img src="/assets/img/appinventor2.png" alt="登录后的界面"></p>
-<p>新建完项目后，网站会自动跳转到项目页。在正中，有一个模拟的手机屏幕，你可以将组件拖动到这个屏幕上，屏幕也可以用来预览界面的布局。所有的组件都在左侧一栏中，如果点击组件右边的问号，可以看到关于这个组件的具体功能说明。在工作面板的右侧，有一个组件列表，会显示已经添加的组件和组件的顺序。当你选中一个组建时，在屏幕的最右边会出现这个组件的组件属性，如文字的字体、字号等，你可以对其进行修改。</p>
+<p>新建完项目后，网站会自动跳转到项目页。在正中，有一个模拟的手机屏幕，你可以将组件拖动到这个屏幕上，屏幕也可以用来预览界面的布局。所有的组件都在左侧一栏中，如果点击组件右边的问号，可以看到关于这个组件的具体功能说明。在工作面板的右侧，有一个组件列表，会显示已经添加的组件和组件的顺序。当你选中一个组建时，在屏幕的最右边会出现这个组件的组件属性，如文字的字体、字号等，你可以对其进行修改。当你进行完组件的设计后，可以点击右上角的“逻辑设计”按钮来对组件进行编程。在“逻辑设计”页面的左侧，每个组件都有对应的一些程序模块，你可以组合这些模块来实现一定的功能。</p>
 <p><img src="/assets/img/appinventor3.png" alt="项目页面"></p>
 <h3 id="关于屏幕"><a href="#关于屏幕" class="headerlink" title="关于屏幕"></a>关于屏幕</h3><p>在App Inventor中，你可以点击网页上端绿色功能条上的增加屏幕按钮增加屏幕。你可以在每个屏幕上分别独立的编程，屏幕之间也可以互相连接跳转。比如，一个屏幕可以用来做登录和注册页面，另一个屏幕用来做App的首页。当在第一个屏幕中点击“登录”按钮时，在App中可以跳转到第二个屏幕。注意：屏幕的名称不能修改，所以请慎重选择屏幕的名称，以便自己在编写App的时候更好理解，节省时间。点击写着”Screen1”的下拉框就可以切换屏幕，其中Screen1是当前显示的屏幕的名称。</p>
 <p>Screen1一个默认的屏幕，比较特殊。当App启动时，Screen1将首先被打开。所以建议App的功能不要放在Screen1去做，因为如果觉得这项功能不适合一开始就展示，就没法补救了。因此，Screen1通常被用来和用户打招呼。</p>
@@ -194,7 +197,8 @@
 <p><img src="/assets/img/appinventor4.png" alt="生成二维码连接AI伴侣"></p>
 <h3 id="如何导出、安装完成的App"><a href="#如何导出、安装完成的App" class="headerlink" title="如何导出、安装完成的App"></a>如何导出、安装完成的App</h3><p>在网页上侧的白色工具栏中点击“打包apk”下拉框，再进一步选择，即可生成一个.apk文件。把这个文件下载到安卓手机上，就可以安装App了。</p>
 <p>如果你需要和他人协作完成一个项目，可以点击“项目”下拉框，再选择“导出项目(.aia)”，这样就会生成一个.aia的文件。其他人可以点击“导入项目(.aia)”将这个项目导入，接着就可以继续修改了。</p>
-<h2 id="用App-Inventor实现弹球游戏"><a href="#用App-Inventor实现弹球游戏" class="headerlink" title="用App Inventor实现弹球游戏"></a>用App Inventor实现弹球游戏</h2><p>这里我讲用一个弹球的小游戏作为例子，给大家具体介绍如何使用App Inventor. 在该游戏中，玩家可一个控制一个横版来弹一个小球，并调整角度使得小球能“吃”到空中的食物。这里先给出我编写的App的aia文件，大家可以自行导入到App Inventor网站中，以方便理解和体验（详见“如何导出、安装完成的App”一节）。点击<a href="/assets/app/bouncingBall.aia">这里</a>下载aia文件，如果想理解体验游戏，可以点击<a href="/assets/app/bouncingBall.apk">这里</a>下载apk文件。</p>
+<h2 id="用App-Inventor实现弹球游戏"><a href="#用App-Inventor实现弹球游戏" class="headerlink" title="用App Inventor实现弹球游戏"></a>用App Inventor实现弹球游戏</h2><p>这里我讲用一个弹球的小游戏作为例子，给大家具体介绍如何使用App Inventor. 在该游戏中，玩家可一个控制一个横版来弹一个小球，并调整角度使得小球能“吃”到空中的食物。游戏中有两种食物，第一种食物每次吃到可以得1分；第二种食物称为“高级食物”，会随机出现，并在8秒后消失，每次吃到可以得3分。同时，小球的速度回随着游戏的进程越来越快。</p>
+<p>这里先给出我编写的App的aia文件，大家可以自行导入到App Inventor网站中，以方便理解和体验（详见“如何导出、安装完成的App”一节）。点击<a href="/assets/app/bouncingBall.aia">这里</a>下载aia文件，如果想先理解体验游戏，可以点击<a href="/assets/app/bouncingBall.apk">这里</a>下载apk文件。</p>
 <p>下面，我将从每个组件开始给大家具体介绍这个App是如何实现的。</p>
 <h3 id="用户界面"><a href="#用户界面" class="headerlink" title="用户界面"></a>用户界面</h3><p>用户界面中的组建可以用来实现一些最基本的功能，比如文字、图片、文本输入框等。</p>
 <p><strong>标签</strong>  标签可以用来显示文字，你可以通过代码控制标签中文字的内容、字体、字号、颜色等信息。</p>
@@ -217,7 +221,18 @@
 <p>接着，我们一个个的设置每个组件的具体参数，使其尽可能的美观。还要对每一个组件用其功能命名，以方便接下来的编程。</p>
 <p><img src="/assets/img/appinventor8.png" alt="组件设计"></p>
 <h3 id="逻辑设计"><a href="#逻辑设计" class="headerlink" title="逻辑设计"></a>逻辑设计</h3><p>进行完组件设计后就要进行逻辑设计了，也就是开始进行模块化编程。</p>
-<p>未完待续……</p>
+<p><strong>定义变量</strong> 首先我们需要定义变量。在这个小游戏中，有几个变量，分别是当前得分，当前用户选中的球速，以及可供选择的球速列表。其实，在这个游戏中，可以不定义变量，但定义了变量会是“代码”更加易懂，好看。</p>
+<p><strong>屏幕初始化</strong> App Inventor 有一个屏幕初始化模块，一旦用户进入这个屏幕，屏幕初始化模块里的“代码”会被立刻执行。在这个游戏中，我们只需要将用来选择球速的列表选择框中的选项初始化即可。</p>
+<p><strong>开始游戏</strong> 当“开始”按钮被点击时，我们要进行一系列的初始化，包括球和挡板的位置、球速、得分等等。下面这张代码的图片里具体的显示了需要初始化的内容。</p>
+<p><img src="/assets/img/appinventor9.png" alt="需要初始化的模块"></p>
+<p><strong>处理碰撞</strong> 在这个游戏中，可能会发生三种碰撞。第一种是和屏幕边缘的碰撞，第二种是和横板的碰撞，第三种是和食物的碰撞。对于第一种碰撞我们需要判断一下，如果小球碰到了屏幕底边，那么游戏结束，否则让小球反弹。</p>
+<p>第二种碰撞稍微复杂一些。如果把小球和横板的碰撞设计为镜面反射，那么小球的路径将会是固定的且很有可能构成循环。这样也不太可能吃到食物，因此游戏体验极差。所以小球和横板碰撞的原理是这样的：设横板长度为$d$, 在横板正中间向下约$\frac{d}{3}$的地方标记一个点，小球的反射角度即为入射点和标记点的反向延长线。你可能没听懂，但可以参考下图理解。</p>
+<p><img src="/assets/img/appinventor10.png" alt="小球的反弹"></p>
+<p>对于第三种反射，我们要更新得分等数据，还要让食物出现在另一个随机位置。代码较长，就不以一一放出来了。如果感兴趣的话可以下载aia文件，自行阅读代码。</p>
+<p><strong>高级食物</strong> 高级食物的实现只需要借助计时器组件。我们在游戏开始时让第一个计时器开始计时，每过一秒钟，便有一定的概率使“高级食物”出现。如果出现了“高级食物，就让第二个计时器开始计时，到达8秒后，将“高级食物”隐藏。</p>
+<p><img src="/assets/img/appinventor11.png" alt="实现高级食物的计时器代码"></p>
+<p>至此，这个游戏就基本完成了。</p>
+<h2 id="用App-Inventor实现用户注册与登录"><a href="#用App-Inventor实现用户注册与登录" class="headerlink" title="用App Inventor实现用户注册与登录"></a>用App Inventor实现用户注册与登录</h2><p>未完待续……</p>
 
       
 
@@ -360,7 +375,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-Start？"><span class="toc-number">1.</span> <span class="toc-text">How to Start？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#关于屏幕"><span class="toc-number">1.1.</span> <span class="toc-text">关于屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何调试"><span class="toc-number">1.2.</span> <span class="toc-text">如何调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何导出、安装完成的App"><span class="toc-number">1.3.</span> <span class="toc-text">如何导出、安装完成的App</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用App-Inventor实现弹球游戏"><span class="toc-number">2.</span> <span class="toc-text">用App Inventor实现弹球游戏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#用户界面"><span class="toc-number">2.1.</span> <span class="toc-text">用户界面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绘图动画"><span class="toc-number">2.2.</span> <span class="toc-text">绘图动画</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#界面布局"><span class="toc-number">2.3.</span> <span class="toc-text">界面布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组件设计"><span class="toc-number">2.4.</span> <span class="toc-text">组件设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑设计"><span class="toc-number">2.5.</span> <span class="toc-text">逻辑设计</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-Start？"><span class="toc-number">1.</span> <span class="toc-text">How to Start？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#关于屏幕"><span class="toc-number">1.1.</span> <span class="toc-text">关于屏幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何调试"><span class="toc-number">1.2.</span> <span class="toc-text">如何调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何导出、安装完成的App"><span class="toc-number">1.3.</span> <span class="toc-text">如何导出、安装完成的App</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用App-Inventor实现弹球游戏"><span class="toc-number">2.</span> <span class="toc-text">用App Inventor实现弹球游戏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#用户界面"><span class="toc-number">2.1.</span> <span class="toc-text">用户界面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绘图动画"><span class="toc-number">2.2.</span> <span class="toc-text">绘图动画</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#界面布局"><span class="toc-number">2.3.</span> <span class="toc-text">界面布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组件设计"><span class="toc-number">2.4.</span> <span class="toc-text">组件设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑设计"><span class="toc-number">2.5.</span> <span class="toc-text">逻辑设计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用App-Inventor实现用户注册与登录"><span class="toc-number">3.</span> <span class="toc-text">用App Inventor实现用户注册与登录</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -530,11 +545,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">博弈论</a>
+                <a href="javascript:void(0)" class="js-tag color5">系统消息</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">系统消息</a>
+                <a href="javascript:void(0)" class="js-tag color4">博弈论</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -542,19 +557,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">密码学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">人工智能</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">App Inventor</a>
+                <a href="javascript:void(0)" class="js-tag color4">密码学</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">小游戏</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">App Inventor</a>
               </li>
             
             <div class="clearfix"></div>
