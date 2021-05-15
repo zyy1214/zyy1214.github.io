@@ -6,22 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://zyy1214.github.io">
-  <title>Hello World | 张远洋的博客</title>
+  <title>柯西方程与柯西方法 | 张远洋的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="此博客创建于 2019.03.29 by zhangyuanyang$\LaTeX$测试：">
-<meta name="keywords" content="系统消息">
+  <meta name="description" content="本文最初发表于知乎，同步发表在这里.  著名的数学家柯西（1789-1857）在1821年前后研究过一类基本的函数方程。因此这类函数方程现在被称为柯西方程，解决这类函数方程所用到的方法被称为柯西方法。本文将介绍柯西方程和柯西方法，以及它们在实际问题中的应用。 本文将尽量用通俗易懂的语言讲解，希望有高中数学基础的人都能看懂。">
+<meta name="keywords" content="数学,数学竞赛">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://zyy1214.github.io/2019/03/29/hello-world/index.html">
+<meta property="og:title" content="柯西方程与柯西方法">
+<meta property="og:url" content="http://zyy1214.github.io/2020/07/03/cauchy-equation/index.html">
 <meta property="og:site_name" content="张远洋的博客">
-<meta property="og:description" content="此博客创建于 2019.03.29 by zhangyuanyang$\LaTeX$测试：">
+<meta property="og:description" content="本文最初发表于知乎，同步发表在这里.  著名的数学家柯西（1789-1857）在1821年前后研究过一类基本的函数方程。因此这类函数方程现在被称为柯西方程，解决这类函数方程所用到的方法被称为柯西方法。本文将介绍柯西方程和柯西方法，以及它们在实际问题中的应用。 本文将尽量用通俗易懂的语言讲解，希望有高中数学基础的人都能看懂。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://github.com/fluidicon.png">
-<meta property="og:updated_time" content="2020-05-23T01:54:49.101Z">
+<meta property="og:updated_time" content="2021-05-15T08:27:32.090Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="此博客创建于 2019.03.29 by zhangyuanyang$\LaTeX$测试：">
-<meta name="twitter:image" content="https://github.com/fluidicon.png">
+<meta name="twitter:title" content="柯西方程与柯西方法">
+<meta name="twitter:description" content="本文最初发表于知乎，同步发表在这里.  著名的数学家柯西（1789-1857）在1821年前后研究过一类基本的函数方程。因此这类函数方程现在被称为柯西方程，解决这类函数方程所用到的方法被称为柯西方法。本文将介绍柯西方程和柯西方法，以及它们在实际问题中的应用。 本文将尽量用通俗易懂的语言讲解，希望有高中数学基础的人都能看懂。">
   
     <link rel="alternative" href="/atom.xml" title="张远洋的博客" type="application/atom+xml">
   
@@ -151,34 +149,133 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-cauchy-equation" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      柯西方程与柯西方法
     </h1>
   
 
         
-        <a href="/2019/03/29/hello-world/" class="archive-article-date">
-  	<time datetime="2019-03-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-29</time>
+        <a href="/2020/07/03/cauchy-equation/" class="archive-article-date">
+  	<time datetime="2020-07-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>此博客创建于 2019.03.29 by zhangyuanyang<br>$\LaTeX$测试：<br><a id="more"></a></p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>链接：<a href="https://zyy1214.github.io">myblog</a><br>图片：</p>
-<p><img src="https://github.com/fluidicon.png" alt="github" style="zoom:25%;"><br><strong>加粗</strong> <em>斜体</em><br>插入代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Hello, world!"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>数学公式：<br>$\sum\limits_{i=1}^nx_i^2=\frac{x(x+1)(2x+1)}{6}$<br>$\sqrt{\frac{\sum\limits_{i=1}^nx_i^2}{n}}\ge\frac{\sum\limits_{i=1}^nx_i}{n}\ge\sqrt[n]{\prod\limits_{i=1}^nx}\ge\frac{n}{\sum\limits_{i=1}^n\frac{1}{x_i}}$</p>
+        <blockquote>
+<p>本文最初发表于<a href="https://zhuanlan.zhihu.com/p/80543711" target="_blank" rel="noopener">知乎</a>，同步发表在这里.</p>
+</blockquote>
+<p>著名的数学家<strong>柯西</strong>（1789-1857）在1821年前后研究过一类基本的函数方程。因此这类函数方程现在被称为<strong>柯西方程</strong>，解决这类函数方程所用到的方法被称为<strong>柯西方法</strong>。本文将介绍柯西方程和柯西方法，以及它们在实际问题中的应用。</p>
+<p>本文将尽量用通俗易懂的语言讲解，希望有高中数学基础的人都能看懂。</p>
+<a id="more"></a>
+<h3 id="柯西方程"><a href="#柯西方程" class="headerlink" title="柯西方程"></a>柯西方程</h3><p>柯西方程大致分为四类，下面将详细地介绍。</p>
+<p><strong>加性柯西方程：</strong>这类柯西方程是较为简单的一种。其描述如下：设函数 $f:\mathbb{R}\rightarrow \mathbb{R}$ ，满足对任意实数 $x,y$ ，均有 $f(x+y)=f(x)+f(y)$. 求 $f(x)$ .</p>
+<p>柯西解决这道函数方程的思想是：先解决 $x,y$ 均为正整数的情况，再解决所有整数的情况，接着解决有理数的情况，最后解决实数的情况，这样层层递进的解决本题。</p>
+<p>下面，我们先来解决<strong>正整数</strong>的情况。我们取 $x=y=1$ ，得到 $f(2)=2f(1)$ . 再取 $x=2,y=1$ , 得到 $f(3)=f(2)+f(1)=2f(1)+f(1)=3f(1)$. 类似的，我们可以得到 $f(n)=nf(1)$ ，其中 $n$ 为正整数.</p>
+<p>我们再推广到<strong>所有整数</strong>的情形：取 $x=y=0$ ，可得 $f(0)=0$ . 再取 $y=-x$ ，所以 $0=f(0)=f(x)+f(-x)$ . 因此 $f(x)$ 为奇函数，所以对 $\forall \,x\in\mathbb{Z},f(x)=xf(1)$ .</p>
+<p>再来解决<strong>有理数</strong>的情况。设有理数 $\frac{p}{q}\,(p,q\in\mathbb{Z})$ , 取 $x=y=\frac{p}{q}$, 得到 $f\left(\frac{2p}{q}\right)=2f\left(\frac{p}{q}\right)$. 再类似整数时的方法，我们可以得到 $q\cdot  f\left(\frac{p}{q}\right)=f\left(\frac{pq}{q}\right)=f(p)=pf(1)$, 即： $f\left(\frac{p}{q}\right)=\frac{p}{q}\cdot f(1)$ . 因此有理数的情形就解决了。</p>
+<p>我们来到了最关键的一步：<strong>实数</strong>。根据现有的条件，是无法在实数范围内求出 $f(x)$ 的，我们需要补充条件。如果 $f(x)$ 满足下列三个条件之一，那么我们就可以确定 $f(x)$ 的解析式为 $f(x)=cx$ ，其中 $c=f(1)$ ：</p>
+<ol>
+<li>$f$ 连续；</li>
+<li>$f$ 在一个区间上单调；</li>
+<li>$f$ 在一个区间上有上界或下界.</li>
+</ol>
+<p>下面将逐一证明.</p>
+<h4 id="（一）-f-连续"><a href="#（一）-f-连续" class="headerlink" title="（一）$f$ 连续"></a>（一）$f$ 连续</h4><p><em>连续的定义：称 ${f(x)} $ 在 ${x_0}$ 处连续，如果 ${\lim\limits_{x\rightarrow x_0}f(x)=f(x_0)}$.</em> </p>
+<p>设 $x\in \mathbb{R}$ , 取一列有理数 $q_1,q_2,q_3,\ldots$ 逼近 $x$ ，即 $\lim\limits_{n\rightarrow\infty}q_n=x$（这里类似求无理数次幂的方法）. 所以 $f(x_0)=\lim\limits_{n\rightarrow\infty}f(q_n)=\lim\limits_{n\rightarrow\infty}q_nf(1)=x_0f(1)$（这里第一步用到了连续的定义）.</p>
+<h4 id="（二）-f-单调"><a href="#（二）-f-单调" class="headerlink" title="（二） ${f}$ 单调"></a>（二） ${f}$ 单调</h4><p>不妨设 f 在区间 $(a,b)$ 上单调递增 ，此时易知 $f(1)&gt;0$ . 对 $x_0\in (a,b)$，若 $f(x_0)\ne x_0f(1)$ , 则：</p>
+<ul>
+<li><p>情形一： $f(x_0)&lt;x_0f(1)$. 我们取有理数 $q$ , 使得 $f(x_0)&lt;f(q)=qf(1)&lt;x_0f(1)$ . 结合  $f$  的单调性，可以得出 $x_0&lt;q&lt;x_0$ , 矛盾.</p>
+</li>
+<li><p>情形二： $f(x_0)&gt;x_0f(1)$. 我们取有理数 $q$ , 使得 $f(x_0)&gt;f(q)=qf(1)&gt;x_0f(1)$ . 结合  $f$  的单调性，可以得出 $x_0&gt;q&gt;x_0$ , 矛盾.</p>
+</li>
+</ul>
+<p>因此 $f(x_0)=x_0f(1)$. </p>
+<p>对 $x_1\notin (a,b)$ , 取有理数 $q$ , 使得 $x_1+q\in (a,b)$ , 则  $f(x_1)+qf(1)=f(x_1)+f(q)=f(x_1+q)=(x_1+q)f(1)$. 所以 $f(x_1)=x_1f(1)$ , 进而可知对任意实数 $x $都有 $f(x)=cx$.</p>
+<h4 id="（三）-f-有界"><a href="#（三）-f-有界" class="headerlink" title="（三） ${f}$ 有界"></a>（三） ${f}$ 有界</h4><p>不妨设 f 在区间 $(a,b)$ 上有上界 $M$ , 即对任意 $x\in (a,b)$ , $f(x)\le M$. </p>
+<p>记 $g(x)=f(x)-xf(1)$ , 则对任意有理数 $q$ , $g(q)=0$ , 且当 $x\in (a,b)$ 时， $g(x)\le M+b\left|f(1)\right|$ , 即 $g$ 在 $(a,b)$ 上有上界. 对任意 $x\in\mathbb{R}$ , 取有理数 $q_1$ , 使得 $x+q_1\in(a,b)$ , 则 $g(x)=g(x+q_1)-g(q_1)=g(x+q_1)$ , 所以 $g$ 在 $\mathbb{R}$ 上有上界.</p>
+<p>若存在实数 $x_0$ , 使得 $g(x_0)\ne0$ , 不妨设 $g(x_0)&gt;0$. 因为对任意正整数 $n$ , $g(nx_0)=ng(x_0)$ , 所以令 $n\to+\infty$ 可知 $g$ 就没有上界，矛盾.<br>因此 $g(x)=0$ , 即 $f(x)=xf(1)=cx$.</p>
+<h4 id="柯西方程的其它形式"><a href="#柯西方程的其它形式" class="headerlink" title="柯西方程的其它形式"></a>柯西方程的其它形式</h4><p>柯西方程还有其它三种形式，均可以利用加性柯西方程解决：</p>
+<h5 id="形式二"><a href="#形式二" class="headerlink" title="形式二"></a>形式二</h5><p>设函数 $f:\mathbb{R}\rightarrow \mathbb{R}$ ，满足对任意实数 $x,y$ ，均有 $f(x+y)=f(x)f(y)$ ，则当上述三个条件（ $f$ 连续、单调或有界）中的一个成立时， $f(x)\equiv0$ （$\equiv$  表示恒等于）或 $f(x)\equiv1$ 或存在实数 $a\in (0,1)\cup(1,+\infty)$ ，使得 $f(x)=a^x$.</p>
+<p>解：取 $x=y=0$ , 则 $f(0)=f(0)^2$ , 因此 $f(0)=0,1$ .</p>
+<p>若 $f(0)=0$ , 取 $y=0$ , 则可知 $f(x)\equiv0$ .</p>
+<p>若 $f(0)=1$ , 对任意实数 $x , f(x)=f\left(\dfrac x2+\dfrac x2\right)=f\left(\dfrac x2\right)^2$. 又 $1=f(0)=f\left(\dfrac x2 - \dfrac x2\right)=f\left(\dfrac x2\right)f\left(-\dfrac x2\right)$ , 所以 $f\left(\dfrac x2\right)\ne 0$ , 推出 $f(x)&gt;0$ . </p>
+<p>令 $g(x)=\ln f(x)$ , 则 $g(x+y)=g(x)+g(y)$ , 由加性柯西方程结论 $g(x)=cx$ , 所以 $f(x)=e^{cx}$ . 若 $c=0$ , 则 $f(x)\equiv 1$ ; 若 $c\ne 0$ , 则存在 $a$ , 使得 $f(x)=a^x$ .</p>
+<h5 id="形式三"><a href="#形式三" class="headerlink" title="形式三"></a>形式三</h5><p>设函数 $f:\mathbb{R}^+\rightarrow \mathbb{R}$ ，满足对任意实数 $x,y$ ，均有 $f(xy)=f(x)+f(y)$ ，则当上述条件中的一个成立时， $f(x)\equiv0$ 或存在实数 $a\in (0,1)\cup(1,+\infty)$ ，使得 $f(x)=\log_ax$.</p>
+<p>解：令 $g(x)=f\left(e^x\right)$ , 则 $g(x+y)=f\left(e^{x+y}\right)=f\left(e^x\right)+f\left(e^y\right)=g(x)+g(y)$ . 于是由加性柯西方程结论， $g(x)=cx$ , 因此 $f(x)=c\ln x=\log_ax$.</p>
+<h5 id="形式四"><a href="#形式四" class="headerlink" title="形式四"></a>形式四</h5><p>设函数 $f:\mathbb{R}^+\rightarrow \mathbb{R}$ ，满足对任意实数 $x,y$ ，均有 $f(xy)=f(x)f(y)$ ，则当上述条件中的一个成立时， $f(x)\equiv0$ 或存在实数 $\alpha$ ，使得 $f(x)=x^\alpha$.</p>
+<p>解：若存在 $x_0&gt;0$ , 使得 $f(x_0)=0$ , 则取 $x=x_0 , f(x_0y)=0$ , 所以 $f(x)\equiv 0$.</p>
+<p>当对任意 $x&gt;0$ , $f(x)$ 均不等于 $0$ 时， $f(x)=f(\sqrt{x}\cdot\sqrt{x})=f\left(\sqrt{x}\right)^2&gt;0$ .</p>
+<p>令 $g(x)=\ln f\left(e^x\right)$ , 则 $g(x+y)=\ln f\left(e^{x+y}\right)=\ln\left(f\left(e^x\right)\cdot f\left(e^y\right)\right)=\ln f\left(e^x\right)+\ln f\left(e^y\right)=g(x)+g(y)$. 由加性柯西方程结论， $g(x)=cx$ , 即 $f\left(e^x\right)=e^{cx}$ , $f(x)=x^c$.</p>
+<h3 id="柯西方程与柯西方法在解题中的应用"><a href="#柯西方程与柯西方法在解题中的应用" class="headerlink" title="柯西方程与柯西方法在解题中的应用"></a>柯西方程与柯西方法在解题中的应用</h3><p>柯西方程及柯西方法在很多函数方程问题中都有应用，这里举几道例题并给出几道作为练习。</p>
+<h4 id="（一）利用柯西方程结论"><a href="#（一）利用柯西方程结论" class="headerlink" title="（一）利用柯西方程结论"></a>（一）利用柯西方程结论</h4><p>1. 求所有的函数 $f:\mathbb{Q}\to\mathbb{Q}$ , 使得对任意有理数 $x,y$ , 均有 $f\left(\frac{x+y}{2}\right)=\frac{f(x)+f(y)}{2}$. </p>
+<p>解：记 $g(x)=f(x)-f(0)$ , 则 $g(0)=0$ , 且由条件可知 $g\left(\frac{x+y}{2}\right)=\frac{g(x)+g(y)}{2}$. 取 $y=0$ , 则 $g\left(\frac{x}{2}\right)=\frac{g(x)}{2}$. 代回原式，可得 $\frac{1}{2}g(x+y)=\frac {1}{2}\left(g(x)+g(y)\right)$. 由加性柯西方程的结论，可设 $g(x)=ax$ ( $a$ 是常数). 因此 $f(x)=ax+b\,(a,b\in\mathbb{Q})$. 经检验，成立.</p>
+<p>2. 求所有的函数 $f:\mathbb{R}\to \mathbb{R}$ , 使得对任意实数 $x,y,z,w$ , 均有<br>$\begin{align} \left(f(x)+f(y)\right)\left(f(u)+f(v)\right)=f(xu-yv)+f(xv+yu). \end{align}\ $<br><em>来源：2002 年国际数学奥林匹克竞赛（IMO）第 5 题</em></p>
+<p>解：取 $x=y=u=v=0$ , 则 $4f(0)^2=2f(0)$ , 推出 $f(0)=0,\frac{1}{2}$. </p>
+<p><em>情形一</em>，$f(0)=\frac{1}{2}$ , 取 $y=u=v=0$ , 则 $\left(f(x)+\frac{1}{2}\right)\left(\frac{1}{2}+\frac{1}{2}\right)=\frac{1}{2}+\frac{1}{2}$, 推出 $f(x)\equiv\frac{1}{2}$. </p>
+<p><em>情形二</em>，$f(0)=0$ , 取 $y=v=0$ , 则 $f(x)f(u)=f(xu)$. 取 $x=u=1$ , 则 $f(1)^2=f(1)$ , 推出 $f(1)=0,1$. </p>
+<p>若 $f(1)=0$ , 取 $u=1$ , 推出 $f(x)\equiv0$. </p>
+<p>若 $f(1)=1$ , 取 $u=0,v=1$ , 则 $f(x)+f(y)=f(-y)+f(x)$ , 推出 $f$ 为偶函数, 因此可不妨设 $x,y,z,w&gt;0$. </p>
+<p>取 $u=y,v=x$ , 则 $f\left(x^2\right)=f(x)^2\le \left(f(x)+f(y)\right)^2=f(x^2+y^2)$ , 因此 $f$ 在 $[0,+\infty)$ 上单调不减. 由柯西方程形式四的结论，可设 $f(x)=x^\alpha$. 在原式中取 $x=y=z=w=1$ , 则 $f(2)=4\Rightarrow\alpha=2$. </p>
+<p>综上，经检验， $f(x)\equiv\frac{1}{2}$ 或 $f(x)\equiv 0$ 或 $f(x)=x^2$. </p>
+<h4 id="（二）利用柯西方法（解决柯西方程的思想）"><a href="#（二）利用柯西方法（解决柯西方程的思想）" class="headerlink" title="（二）利用柯西方法（解决柯西方程的思想）"></a>（二）利用柯西方法（解决柯西方程的思想）</h4><p>柯西方法就是在一类函数方程中先解决整数，再解决有理数、实数这样由特殊到一般的方法. 而每一步往往都需要利用上一步已经解决的更为特殊的情况.</p>
+<p>1. 求所有的函数 $f:\mathbb{Q}^+\rightarrow\mathbb{Q}^+$ ，使得对任意正有理数 $x$ ，均有 $f(x+1)=f(x)+1$ ，且 $f(x^2)=f(x)^2$.</p>
+<p>解：取 $x=1$ , 则 $f(1)=f(1)^2 , f(1)=1$ . 进而易得对任意正整数 $n$ , $f(n)=n$.</p>
+<p>对任意有理数 $\frac pq\,(p,q\in\mathbb{N}^+)$ ,</p>
+<script type="math/tex; mode=display">
+\begin{align} \left(f\left(\frac pq\right)+q\right)^2 &=\left(f\left(\frac {p+q^2}{q}\right)\right)^2=f\left(\frac{p^2+2pq^2+q^4}{q^2}\right)\\ &=f\left(q^2+2p+\frac{p^2}{q^2}\right)=q^2+2p+f\left(\frac{p}{q}\right)^2 \end{align}\\</script><p>展开并整理后得到 $f\left(\frac{p}{q}\right)=\frac{p}{q}$ ，因此 $f(x)=x$. 经检验，成立.</p>
+<p>2. 求所有的函数 $f:\mathbb{Q}^+\rightarrow\mathbb{Q}^+$ ，使得 $f(x)+f(y)+2xyf(xy)=\frac{f(xy)}{f(x+y)}$ .<br><em>来源：2007 年中国国家队选拔考试第 4 题</em></p>
+<p>解：<em>我们先取一些特殊值来研究正整数时的情形.</em></p>
+<p>取 $x=y=1$ , 可得 $f(2)=\frac{1}{4}$ ; 取 $x=1,y=2$ , 可得 $f(3)=\frac{1}{4f(1)+5}$ ;</p>
+<p>取 $x=1,y=3$ , 则 $f(4)=\frac{f(3)}{f(1)+f(3)+6f(3)}=\frac{1}{4f(1)^2+5f(1)+7}$. </p>
+<p>取 $x=y=2$ , 则 $2f(2)+8f(4)=1\Rightarrow f(4)=\frac{1}{16}$. 结合上式，解得 $f(1)=1$. </p>
+<p>再取 $y=1$ , 利用条件得 $f(x)+1+2xf(x)=\frac{f(x)}{f(x+1)}$,  推出 $f(x+1)=\frac{f(x)}{(2x+1)f(x)+1}$. </p>
+<p>简单归纳得到 $f(x+n)=\frac{f(x)}{(2nx+n^2)f(x)+1}$ , 于是得出 $f(n)=\frac{1}{n^2},n\in\mathbb{N}_+$. </p>
+<p><em>下面进一步推广到有理数.</em></p>
+<p>对任意有理数 $\frac{p}{q}\,(p,q\in\mathbb{N}^+)$ , 取 $x=\frac{p}{q},y=q$ , 则 $f\left(\frac{p}{q}\right)+\frac{1}{q^2}+\frac{2}{p}=\frac{\frac{1}{p^2}}{f\left(q+\frac{p}{q}\right)}$. </p>
+<p>由上面的归纳结果， $f\left(\frac{p}{q}+q\right)=\frac{f\left(\frac{p}{q}\right)}{(2p+q^2)f\left(\frac{p}{q}\right)+1}$, 代入并整理，得到 $f\left(\frac{p}{q}\right)=\frac{q^2}{p^2}$.  综上，经检验， $f(x)=\frac{1}{x^2}$. </p>
+<h4 id="（三）几道练习题"><a href="#（三）几道练习题" class="headerlink" title="（三）几道练习题"></a>（三）几道练习题</h4><p>1. 求所有的函数 $f:\mathbb{R}\rightarrow\mathbb{R}$ ，使得对任意实数 $x,y$，均有 $f(x+y)=f(x)+f(y)$,  且 $f(xy)=f(x)f(y)$.<br>提示：先通过两个式子证明 $f$ 的单调性，再利用柯西方程的结论.</p>
+<p>2. 求所有的函数 $f:\mathbb{R}\rightarrow\mathbb{R}$ ，使得存在递增的函数 $g:\mathbb{R}\to\mathbb{R}$ , 满足对任意实数 $x,y$，均有 $g(x+y)=g(x)f(y)+g(y)$.<br>提示：在条件中令 $x=y,y=x$ 从而消掉 $g(x+y)$, 并使 $x,y$ 对称.</p>
+<p>3. 求所有的函数 $f:\mathbb{R}^+\rightarrow\mathbb{R}^+$ ，使得对任意实数 $x,y$，均有 $f(x + f(y))= f(x + y) + f(y)$.<br><em>来源：2007 年 IMO 预选题 A4</em><br>提示：令 $g(x)=f(x)-x$ , 并试图化简 $g$ 满足的关系式.</p>
+<p>4. 求所有的函数 $f:\mathbb{Q}\rightarrow\mathbb{Q}$ ，使得对任意有理数 $x,y$，均有 $f(xy)=f(x)f(y)-f(x+y)+1$.<br>提示：利用柯西方法并进行一些尝试.</p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>柯西方程是最为基本的一类函数方程，然而这种从整数到有理数再到实数，从特殊到一般，由简入繁的思想方法却值得学习，在其他地方也频繁出现，例如：指数的定义。</p>
+<p>其实，柯西方程还包含更多有趣的内容。在实数范围内，如果没有文中提到的那几个限制条件，还会有一些不平凡的解。如果你比较感兴趣，可以看看维基百科上的介绍。</p>
 
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢支持！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechat.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -189,7 +286,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">系统消息</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数学竞赛</a>
         		</li>
       		
 		</ul>
@@ -245,7 +346,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://zyy1214.github.io/2019/03/29/hello-world/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://zyy1214.github.io/2020/07/03/cauchy-equation/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -259,18 +360,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/05/19/pirate/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          海盗分金币——谁能活下来？
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/03/25/public-key/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">神奇的公钥加密</div>
+    <a href="/2019/05/27/appinventor/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">App Inventor</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -289,6 +381,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#柯西方程"><span class="toc-number">1.</span> <span class="toc-text">柯西方程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#（一）-f-连续"><span class="toc-number">1.1.</span> <span class="toc-text">（一）$f$ 连续</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#（二）-f-单调"><span class="toc-number">1.2.</span> <span class="toc-text">（二） ${f}$ 单调</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#（三）-f-有界"><span class="toc-number">1.3.</span> <span class="toc-text">（三） ${f}$ 有界</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#柯西方程的其它形式"><span class="toc-number">1.4.</span> <span class="toc-text">柯西方程的其它形式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#形式二"><span class="toc-number">1.4.1.</span> <span class="toc-text">形式二</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#形式三"><span class="toc-number">1.4.2.</span> <span class="toc-text">形式三</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#形式四"><span class="toc-number">1.4.3.</span> <span class="toc-text">形式四</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#柯西方程与柯西方法在解题中的应用"><span class="toc-number">2.</span> <span class="toc-text">柯西方程与柯西方法在解题中的应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#（一）利用柯西方程结论"><span class="toc-number">2.1.</span> <span class="toc-text">（一）利用柯西方程结论</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#（二）利用柯西方法（解决柯西方程的思想）"><span class="toc-number">2.2.</span> <span class="toc-text">（二）利用柯西方法（解决柯西方程的思想）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#（三）几道练习题"><span class="toc-number">2.3.</span> <span class="toc-text">（三）几道练习题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#结语"><span class="toc-number">3.</span> <span class="toc-text">结语</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
